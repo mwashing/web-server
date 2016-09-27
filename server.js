@@ -1,6 +1,7 @@
 var express = require('express');
 var app = express();
-var port = 3000;
+// used the defined report
+var port = process.env.PORT || 3000;
 var middleware = require('./middleware.js')
 
 // adding in middleware to support route level activity
